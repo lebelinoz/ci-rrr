@@ -1,5 +1,4 @@
 # Let's import some data
-df = read.csv("australian_males_31Dec2016.csv")
 df = read.csv("M://Information Technology//Quant//R//australian_males_31Dec2016.csv")
 
 
@@ -51,6 +50,4 @@ ggplot(df, aes(Foot_length_cm, Reading_grade)) + geom_point() + facet_wrap( ~ Ag
 
 # Can we still do lines of best fit on each age?
 ggplot(df, aes(Foot_length_cm, Reading_grade)) + geom_point() + facet_wrap( ~ Age) + geom_smooth(method = "lm")
-
-
 
