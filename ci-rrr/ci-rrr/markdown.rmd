@@ -19,7 +19,7 @@ x <- 3
 4 -> x # note: nobody does this
 y = sqrt(x)
 ```
-and see how this affect _Variable Explorer_ window.  
+and see how this affects your _Variable Explorer_ window.  
 
 **Note:** Can press up-arrow to repeat previous command
 
@@ -35,15 +35,17 @@ Try
 # Part I:  The IDE
 ## Plots
 Try the example from ?hist
-```{r}
+```{r, echo=FALSE}
+windows.options(width=10, height=10)
 hist(sqrt(islands), breaks = 12)
 ```
 
 # Part I:  The IDE
 ## Help examples
-```{r, results='hide'}
+```{r eval=FALSE}
 example("lm")
 ```
+
 ...though this one screws up the way plots are shown, forever after asking for a prompt.  Fix by going 
 ```{r, results='hide'}
 par(ask = FALSE)
@@ -56,7 +58,6 @@ v = c(10, 11, 12, 13, 14)
 v # on its own should return the result
 v[2]
 v[-2]
-v[3]
 v[c(2, 3)]
 v[ - c(2, 3)]
 v == 12
@@ -64,8 +65,8 @@ v > 12
 v %% 2
 v %% 2 == 0
 v - 10
-which(v > 2)
-v[which(v > 2)]
+which(v > 12)
+v[which(v > 12)]
 ```
 
 # Part II:  Data Structures
